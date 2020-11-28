@@ -1,0 +1,6 @@
+web:
+  build: .
+  volumes:
+   - ./conf/default.conf:/etc/nginx/conf.d/default.conf
+  ports:
+   - "8080:80"
