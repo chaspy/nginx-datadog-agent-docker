@@ -1,4 +1,4 @@
-version: "3.8"
+version: '3.8'
 services:
   nginx:
     build: .
@@ -6,3 +6,13 @@ services:
      - ./conf/default.conf:/etc/nginx/conf.d/default.conf
     ports:
      - "8080:80"
+  datadog: # ref: https://docs.datadoghq.com/integrations/faq/compose-and-the-datadog-agent/
+    links:
+     - nginx # Connect the Datadog Agent container to the Nginx container
+    image: gcr.io/datadoghq/agent:7.23.1 # ref: https://console.cloud.google.com/gcr/images/datadoghq/GLOBAL/agent
+    environment:
+     - DD_API_KEY=${DD_API_KEY}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /proc/:/host/proc/:ro
+      - /sys/fs/cgroup:/host/sys/fs/cgroup:ro
