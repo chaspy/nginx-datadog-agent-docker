@@ -16,3 +16,4 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /proc/:/host/proc/:ro
       - /sys/fs/cgroup:/host/sys/fs/cgroup:ro
+      - ./datadog/conf.yaml:/etc/datadog-agent/conf.d/nginx.d/conf.yaml
