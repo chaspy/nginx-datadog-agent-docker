@@ -193,11 +193,4 @@ resource "datadog_dashboard" "tfer--dashboard_kh8-002D-uqy-002D-un5" {
       }
     }
   }
-
-  widget {
-    group_definition {
-      layout_type = "ordered"
-      title       = "New group"
-    }
-  }
 }
