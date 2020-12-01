@@ -1,4 +1,4 @@
-resource "datadog_monitor" "tfer--monitor_26365658" {
+resource "datadog_monitor" "nginx_connection" {
   evaluation_delay    = "0"
   include_tags        = "true"
   locked              = "false"

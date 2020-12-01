@@ -1,4 +1,4 @@
-resource "datadog_dashboard" "tfer--dashboard_kh8-002D-uqy-002D-un5" {
+resource "datadog_dashboard" "nginx" {
   is_read_only = "false"
   layout_type  = "ordered"
   title        = "nginx.software-design"
