@@ -2,7 +2,7 @@ resource "datadog_monitor" "nginx_connection" {
   evaluation_delay    = "0"
   include_tags        = "true"
   locked              = "false"
-  message             = "Increase worker connections @take.she12@gmail.com @slack-chaspy-datadog"
+  message             = "Increase worker connections"
   name                = "Nginx connection is too high"
   new_host_delay      = "300"
   no_data_timeframe   = "0"
