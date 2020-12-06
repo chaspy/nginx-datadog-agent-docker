@@ -1,4 +1,5 @@
 # nginx-datadog-agent-docker
+![Docker](https://github.com/chaspy/nginx-datadog-agent-docker/workflows/Docker/badge.svg)
 
 ## Tested Version
 
