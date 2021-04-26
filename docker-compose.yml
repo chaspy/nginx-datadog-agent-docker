@@ -9,7 +9,7 @@ services:
   datadog: # ref: https://docs.datadoghq.com/integrations/faq/compose-and-the-datadog-agent/
     links:
      - nginx # Connect the Datadog Agent container to the Nginx container
-    image: gcr.io/datadoghq/agent:7.23.1 # ref: https://console.cloud.google.com/gcr/images/datadoghq/GLOBAL/agent
+    image: gcr.io/datadoghq/agent:7.27.0 # ref: https://console.cloud.google.com/gcr/images/datadoghq/GLOBAL/agent
     environment:
      - DD_API_KEY=${DD_API_KEY}
     volumes:
